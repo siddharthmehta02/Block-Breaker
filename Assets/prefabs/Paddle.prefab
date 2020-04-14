@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7488386611989821269}
   - component: {fileID: 7488386611989821266}
-  - component: {fileID: 7488386611989821268}
   - component: {fileID: 7488386611989821271}
+  - component: {fileID: 126055891142056152}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -81,7 +81,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &7488386611989821268
+--- !u!114 &7488386611989821271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7488386611989821267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42aa8d69393fe664b9baa43b2370265b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minx: 1
+  maxx: 15
+  screenWidthInUnits: 16
+--- !u!60 &126055891142056152
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,31 +121,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.51721084, y: 0.25}
-      - {x: -0.31828976, y: 0.25042295}
-      - {x: -0.34049636, y: 0.25007486}
-      - {x: -0.34451163, y: 0.25022048}
-      - {x: -0.3499468, y: 0.25016564}
-      - {x: -0.51468474, y: 0.25017053}
-      - {x: -0.52901113, y: 0.24606651}
-      - {x: -0.51841766, y: 0.25354147}
-      - {x: -0.9862329, y: 0.044799417}
+    - - {x: 0.5703125, y: 0.25}
+      - {x: -0.5703125, y: 0.25}
+      - {x: -1, y: 0.0625}
       - {x: -1, y: -0.25}
       - {x: 1, y: -0.25}
-      - {x: 1.0019667, y: 0.038844794}
-      - {x: 0.8359375, y: 0.113090724}
---- !u!114 &7488386611989821271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7488386611989821267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42aa8d69393fe664b9baa43b2370265b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minx: 1
-  maxx: 15
-  screenWidthInUnits: 16
+      - {x: 1, y: 0.0703125}
+      - {x: 0.8359375, y: 0.140625}
